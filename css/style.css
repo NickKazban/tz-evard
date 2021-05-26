@@ -1,0 +1,263 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #0072bc;
+  min-height: 160px;
+}
+
+@media (min-width: 360px) {
+  .header {
+    min-height: 130px;
+  }
+}
+@media (min-width: 640px) {
+  .header {
+    min-height: 130px;
+  }
+}
+.header__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .header__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+@media (min-width: 640px) {
+  .header__item {
+    max-width: 305px;
+    display: flex;
+  }
+}
+.logo__text {
+  font-size: 16px;
+  color: #fff;
+  line-height: 12px;
+}
+
+@media (min-width: 640px) {
+  .logo__text {
+    margin-left: 10px;
+  }
+}
+.header__btn {
+  margin: 10px auto;
+  padding: 5px 10px;
+  width: 150px;
+  height: 30px;
+  background: #f26522;
+  color: #fff;
+  border: none;
+}
+
+.header__btn:hover {
+  background-color: #fff;
+  transition: all 0.9s;
+}
+
+.btn__link:hover {
+  z-index: 1;
+  color: #f26522;
+}
+
+@media (min-width: 640px) {
+  .header__btn {
+    margin-right: 10px;
+  }
+}
+.btn__link {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: -10px;
+  padding: 5px 10px;
+}
+
+.main__text {
+  text-align: center;
+  min-width: 180px;
+  margin: 0 10px 10px 10px;
+}
+.main__text1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 20px 10px;
+}
+.main__text2 {
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main__text-propos {
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+}
+.main__item {
+  text-align: center;
+  border: 2px solid #acacac;
+  border-radius: 13px;
+  max-width: 175px;
+  max-height: 450px;
+  margin: 10px auto;
+}
+.main__item-img img {
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+}
+.main__item-title {
+  color: #8e0000;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.main__item-text {
+  font-size: 8px;
+  line-height: 12px;
+  color: #333333;
+  width: 140px;
+  margin: 0 auto;
+}
+.main__item-order {
+  color: #444444;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.main__item-order-active {
+  color: #06811a;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.main__item-sale {
+  max-width: 100%;
+}
+
+@media (min-width: 420px) {
+  .main__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main__sale {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 875px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .main__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .main__item-sale {
+    max-height: 260px;
+    min-width: 280px;
+  }
+  .main__text-propos {
+    font-size: 15px;
+    line-height: 17px;
+    text-align: start;
+  }
+}
+.offers {
+  background-color: #6dcff6;
+  position: relative;
+}
+.offers__title-text {
+  font-size: 22.5px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px 0;
+  color: #fff;
+}
+.offers__item {
+  padding: 10px 0;
+}
+.offers__item img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 875px) {
+  .offers__item {
+    padding: 20px 200px;
+  }
+  .offers__item img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots button {
+  margin: 10px 10px;
+  font-size: 0;
+  min-width: 16px;
+  min-height: 16px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+
+.footer {
+  min-height: 73px;
+  min-width: 100px;
+  width: 100%;
+  position: absolute;
+}
+.footer__text {
+  margin-top: 33px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 12px;
+}/*# sourceMappingURL=style.css.map */
